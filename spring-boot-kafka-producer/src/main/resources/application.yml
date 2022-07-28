@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spring-boot-kafka-producer
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      group-id: my-group
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+server:
+  port: '8081'
